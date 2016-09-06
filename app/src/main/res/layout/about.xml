@@ -33,7 +33,7 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             style="@style/Label.Shadow"
-            android:text="关于"
+            android:text="@string/settings_about"
             android:textSize="20.0sp" />
 
     </RelativeLayout>
@@ -93,7 +93,7 @@
                 android:textSize="15sp" />
 
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:id="@+id/upgradeLayout"
                 android:layout_width="fill_parent"
                 android:layout_height="44.0dip"
@@ -131,9 +131,9 @@
                     android:singleLine="true"
                     android:text="joyoyao"
                     android:textSize="15sp" />
-            </LinearLayout>
+            </LinearLayout>-->
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="44.0dip"
                 android:layout_below="@id/upgradeLayout"
@@ -170,7 +170,7 @@
                     android:singleLine="true"
                     android:text="github.com/joyoyao/superCleanMaster"
                     android:textSize="15sp" />
-            </LinearLayout>
+            </LinearLayout>-->
 
             <TextView
                 android:id="@+id/copyright"

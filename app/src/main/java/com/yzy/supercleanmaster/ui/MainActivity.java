@@ -196,6 +196,11 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
                 break;
             case 1:
+
+                closeDrawer();
+                SettingsFragment.launch(MainActivity.this);
+                break;
+            /*case 2:
                 closeDrawer();
                 if (mRelaxFragment == null) {
                     mRelaxFragment = new RelaxFragment();
@@ -205,12 +210,8 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
                 }
                 transaction.commit();
 
-                break;
-            case 2:
+                break;*/
 
-                closeDrawer();
-                SettingsFragment.launch(MainActivity.this);
-                break;
 
             // fragment = new SettingsFragment();
             // break;

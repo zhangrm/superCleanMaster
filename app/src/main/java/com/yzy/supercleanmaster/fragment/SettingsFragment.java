@@ -31,10 +31,10 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     }
 
     private Preference createShortCut;
-    private Preference pVersion;
-    private Preference pVersionDetail;
-    private Preference pGithub;// Github
-    private Preference pGrade;// Github
+    //private Preference pVersion;
+    //private Preference pVersionDetail;
+    //private Preference pGithub;// Github
+    //private Preference pGrade;// Github
     private Preference pShare;// Github
     private Preference pAbout;// Github
     @Override
@@ -54,16 +54,16 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
 
         createShortCut = findPreference("createShortCut");
         createShortCut.setOnPreferenceClickListener(this);
-        pVersion = findPreference("pVersion");
+        /*pVersion = findPreference("pVersion");
         pVersion.setOnPreferenceClickListener(this);
         pVersionDetail = findPreference("pVersionDetail");
-        pVersionDetail.setSummary("当前版本：" + AppUtil.getVersion(getActivity()));
+        pVersionDetail.setSummary("Current version：" + AppUtil.getVersion(getActivity()));
         pVersionDetail.setOnPreferenceClickListener(this);
 
         pGithub = findPreference("pGithub");
         pGithub.setOnPreferenceClickListener(this);
         pGrade = findPreference("pGrade");
-        pGrade.setOnPreferenceClickListener(this);
+        pGrade.setOnPreferenceClickListener(this);*/
         pShare = findPreference("pShare");
         pShare.setOnPreferenceClickListener(this);
         pAbout = findPreference("pAbout");
@@ -76,13 +76,13 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     public boolean onPreferenceClick(Preference preference) {
         if ("createShortCut".equals(preference.getKey())) {
             createShortCut();
-        } else if ("pVersion".equals(preference.getKey())) {
+        } /*else if ("pVersion".equals(preference.getKey())) {
             UmengUpdateAgent.forceUpdate(getActivity());
             UmengUpdateAgent.setUpdateListener(new UmengUpdateListener() {
                 @Override
                 public void onUpdateReturned(int i, UpdateResponse updateResponse) {
                     if (i != 0) {
-                        T.showLong(getActivity(), "当前版本为最新版本！");
+                        T.showLong(getActivity(), "Current is last new version！");
                     }
 
                 }
@@ -91,7 +91,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
             VersionFragment.launch(getActivity());
         } else if ("pGithub".equals(preference.getKey())) {
             Utils.launchBrowser(getActivity(), "https://github.com/joyoyao/superCleanMaster");
-        }else if ("pGrade".equals(preference.getKey())) {
+        }*/else if ("pGrade".equals(preference.getKey())) {
             startMarket();
         }else if ("pShare".equals(preference.getKey())) {
                 shareMyApp();
@@ -105,7 +105,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     private void shareMyApp() {
 
         UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share", RequestType.SOCIAL);
-        mController.setShareContent("一键清理（开源版）一键清理手机进程，真心不错呀,推荐您使用！.");
+        mController.setShareContent("The current is the latest version!");
         mController.openShare(getActivity(), false);
 
     }
@@ -113,10 +113,10 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     private void initData() {
         String appID = "wxa263da737a20300e";
         String appSecret = "381a2fab6466410c674afaa40c77c953";
-// 添加微信平台
+        // 添加微信平台
         UMWXHandler wxHandler = new UMWXHandler(getActivity(),appID,appSecret);
         wxHandler.addToSocialSDK();
-// 添加微信朋友圈
+        // 添加微信朋友圈
         UMWXHandler wxCircleHandler = new UMWXHandler(getActivity(),appID,appSecret);
         wxCircleHandler.setToCircle(true);
         wxCircleHandler.addToSocialSDK();
@@ -138,7 +138,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
         i.addCategory("android.intent.category.DEFAULT");
         intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, i);
         getActivity().sendBroadcast(intent);
-        T.showLong(getActivity(), "“一键加速”快捷图标已创建");
+        T.showLong(getActivity(), R.string.createShortCut);
 
     }
 
@@ -153,7 +153,6 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
         // 没有安装市场
         else {
             T.showLong(getActivity(),"无法打开应用市场");
-
         }
     }
 }

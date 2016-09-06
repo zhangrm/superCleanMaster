@@ -51,10 +51,10 @@ public class SoftwareManageActivity extends BaseSwipeBackActivity {
 
         getActionBar().setHomeButtonEnabled(true);
       //  applyKitKatTranslucency();
-
+        String titles [] = {getResources().getString(R.string.user_app),getResources().getString(R.string.sys_app)};
 
         res = getResources();
-        adapter = new MyPagerAdapter(getSupportFragmentManager());
+        adapter = new MyPagerAdapter(getSupportFragmentManager(),titles);
 
         pager.setAdapter(adapter);
 
@@ -133,11 +133,17 @@ public class SoftwareManageActivity extends BaseSwipeBackActivity {
 
     public class MyPagerAdapter extends WeakFragmentPagerAdapter {
 
-        private final String[] TITLES = {"用户软件", "预装软件"};
 
-        public MyPagerAdapter(FragmentManager fm) {
+        private String[] TITLES = null;
+
+        public MyPagerAdapter(FragmentManager fm,String[] TITLES) {
             super(fm);
+            this.TITLES = TITLES;
         }
+
+        /*public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }*/
 
         @Override
         public CharSequence getPageTitle(int position) {

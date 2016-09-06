@@ -25,7 +25,7 @@ public class NavigationDrawerFragment extends BaseFragment {
     private NavigationDrawerCallbacks mCallbacks;
     final int radioIds[] = {
             R.id.radio0,
-            R.id.radio1,
+           /* R.id.radio1,*/
             R.id.radio2
 
     };

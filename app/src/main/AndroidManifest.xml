@@ -111,7 +111,7 @@
           友盟
           -->
 
-        <meta-data android:value="54d9a36afd98c56d450008ab" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="57cedfe9e0f55ad7930050a3" android:name="UMENG_APPKEY"></meta-data>
         <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
 
         <service

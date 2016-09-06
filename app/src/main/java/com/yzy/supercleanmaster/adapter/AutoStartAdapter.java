@@ -78,10 +78,10 @@ public class AutoStartAdapter extends BaseAdapter {
             holder.appName.setText(item.getLabel());
             if (item.isEnable()) {
                 holder.disable_switch.setBackgroundResource(R.drawable.switch_on);
-                holder.disable_switch.setText("已开启");
+                holder.disable_switch.setText(R.string.open_autostart);
             } else {
                 holder.disable_switch.setBackgroundResource(R.drawable.switch_off);
-                holder.disable_switch.setText("已禁止");
+                holder.disable_switch.setText(R.string.close_autostart);
             }
             // holder.size.setText(Formatter.formatShortFileSize(mContext, item.getCacheSize()));
 
@@ -103,7 +103,7 @@ public class AutoStartAdapter extends BaseAdapter {
 
                     } else {
 
-                        T.showLong(mContext, "该功能需要获取系统root权限，点击允许获取root权限");
+                        T.showLong(mContext, R.string.need_root);
 
                     }
 
@@ -131,14 +131,14 @@ public class AutoStartAdapter extends BaseAdapter {
         ShellUtils.CommandResult mCommandResult = ShellUtils.execCommand(mSring, true, true);
 
         if (mCommandResult.result == 0) {
-            T.showLong(mContext, item.getLabel() + "已禁止");
+            T.showLong(mContext, item.getLabel() + mContext.getString(R.string.close_autostart));
             item.setEnable(false);
             notifyDataSetChanged();
             if (mHandler != null) {
                 mHandler.sendEmptyMessage(AutoStartFragment.REFRESH_BT);
             }
         } else {
-            T.showLong(mContext, item.getLabel() + "禁止失败");
+            T.showLong(mContext, item.getLabel() + mContext.getString(R.string.close_autostart_fail));
         }
 
         // T.showLong(mContext, mCommandResult.result + "" + mCommandResult.errorMsg + mCommandResult.successMsg);
@@ -159,14 +159,14 @@ public class AutoStartAdapter extends BaseAdapter {
         ShellUtils.CommandResult mCommandResult = ShellUtils.execCommand(mSring, true, true);
 
         if (mCommandResult.result == 0) {
-            T.showLong(mContext, item.getLabel() + "已开启");
+            T.showLong(mContext, item.getLabel() + mContext.getString(R.string.open_autostart));
             item.setEnable(true);
             notifyDataSetChanged();
             if (mHandler != null) {
                 mHandler.sendEmptyMessage(AutoStartFragment.REFRESH_BT);
             }
         } else {
-            T.showLong(mContext, item.getLabel() + "开启失败");
+            T.showLong(mContext, item.getLabel() + mContext.getString(R.string.open_autostart_fail));
         }
         //   T.showLong(mContext, mCommandResult.result + "" + mCommandResult.errorMsg + mCommandResult.successMsg);
     }

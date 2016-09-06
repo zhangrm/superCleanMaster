@@ -52,9 +52,10 @@ public class AutoStartManageActivity extends BaseSwipeBackActivity {
         getActionBar().setHomeButtonEnabled(true);
       //  applyKitKatTranslucency();
 
+        String titles [] = {getResources().getString(R.string.user_app),getResources().getString(R.string.sys_app)};
 
         res = getResources();
-        adapter = new MyPagerAdapter(getSupportFragmentManager());
+        adapter = new MyPagerAdapter(getSupportFragmentManager(),titles);
 
         pager.setAdapter(adapter);
 
@@ -133,10 +134,11 @@ public class AutoStartManageActivity extends BaseSwipeBackActivity {
 
     public class MyPagerAdapter extends WeakFragmentPagerAdapter {
 
-        private final String[] TITLES = {"普通软件", "系统核心软件"};
+        private String[] TITLES = null;
 
-        public MyPagerAdapter(FragmentManager fm) {
+        public MyPagerAdapter(FragmentManager fm,String[] TITLES) {
             super(fm);
+            this.TITLES = TITLES;
         }
 
         @Override

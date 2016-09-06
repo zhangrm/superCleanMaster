@@ -1,39 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">一键清理</string>
-    <string name="short_cut_name">一键加速</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Speedup</string>
+    <string name="short_cut_name">Speedup</string>
     <string name="action_settings">Settings</string>
     <string name="drawer_open">drawer_open</string>
     <string name="drawer_close">drawer_close</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="app_memory_clean">内存加速</string>
-    <string name="app_rublish_clean">垃圾清理</string>
-    <string name="app_autostart_manage">自启管理</string>
-    <string name="app_software_manage">软件管理</string>
-    <string name="cleaned">清理垃圾 (<xliff:g id="memory">%1$s</xliff:g>)</string>
-    <string name="empty_cache">缓存为空.</string>
-    <string name="scanning">扫描中…</string>
-    <string name="scanning_m_of_n">扫描中 %1$d/%2$d</string>
-    <string name="software_top_text">已安装%1$s款软件,占有存储空间%2$s</string>
+    <string name="app_memory_clean">Memory acceleration</string>
+    <string name="app_rublish_clean">Mobile cleaning</string>
+    <string name="app_autostart_manage">Autostarts</string>
+    <string name="app_software_manage">software manage</string>
+    <string name="cleaned">cleaned (<xliff:g id="memory">%1$s</xliff:g>)</string>
+    <string name="empty_cache">empty cache.</string>
+    <string name="scanning">scanning…</string>
+    <string name="scanning_m_of_n">scanning %1$d/%2$d</string>
+    <string name="software_top_text">Installed%1$s,Occupy storage space%2$s</string>
 
+    <string name="can_clean">can clean</string>
+    <string name="non_sys_app_forbidden">Non system application recommended banning</string>
+    <string name="storage_space">storage space</string>
+    <string name="memory_space">memory space</string>
+    <string name="index">index</string>
+    <string name="boot_auto_startup">Boot/Automatic Startup</string>
+    <string name="tencent_weibo">Tencent Weibo</string>
+    <string name="share">Share</string>
+    <string name="network_error_retry">Network failed to load, please try again.</string>
+    <string name="pay_attention_weibo">Pay attention to the weibo</string>
+    <string name="version_info">Version</string>
+    <string name="createShortCut">Create shortCut</string>
+    <string name="strong_cleaning">Strong cleaning</string>
+    <string name="need_root">This feature requires root permissions</string>
+    <string name="user_app">User app</string>
+    <string name="sys_app">System app</string>
+    <string name="uninstall_info">Uninstall the following software, will affect the normal use</string>
+    <string name="comm_app">Common software</string>
+    <string name="core_app">System core software</string>
+    <string name="prohibit_comm_app">Prohibit the following software from the start, can improve the running speed</string>
+    <string name="prohibit_core_app">Prohibit the system core software from Kai, will affect the normal use of mobile phones, please be careful to operate</string>
+    <string name="can_optimizable">can optimizable count:</string>
+    <string name="app_unit"></string>
+    <string name="disable_all_app">Application has been banned</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="open_autostart">Enabled</string>
+    <string name="close_autostart">Disabled</string>
+    <string name="open_autostart_fail">Enabled fail</string>
+    <string name="close_autostart_fail">Disabled fail</string>
 
-    <string name="category_other">其他</string>
-    <string name="category_def">常规设置</string>
-    <string name="settings_basic">基本设置</string>
-    <string name="category_advanced">高级设置</string>
-    <string name="settings_about">关于</string>
-    <string name="settings_version_update">检查更新</string>
-    <string name="settings_grade">给我好评</string>
-    <string name="settings_share">推荐给好友</string>
+    <string name="category_other">Other</string>
+    <string name="category_def">general settings</string>
+    <string name="settings_basic">basic settings</string>
+    <string name="category_advanced">advanced setting</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version_update">check for updates</string>
+    <string name="settings_grade">give me favourable comment</string>
+    <string name="settings_share">Recommend to friends</string>
 
-    <string name="title_settings">设置</string>
+    <string name="title_settings">settings</string>
      <string name="app_information">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\
-        亲！么么！一键清理 开源版 。高效、快速、准确的清理手机垃圾，提升手机运行速度。\
-         源代码开源，保证安全
-        由于时间仓促，错误与疏忽之处在所难免,\
-        如果各位亲能给出宝贵的建议与指点,那将是极好的哦！么么哒！</string>
-    <string name="all_rights_reserved">Copyright © 2012-2015 zaiyong. All Rights Reserved.</string>
+        Efficient, fast and accurate cleaning of mobile phone garbage, improve the speed of mobile phone.</string>
+    <string name="all_rights_reserved">Copyright © 2012-2016 TBL. All Rights Reserved.</string>
+
+    <string name="UMBreak_Network">Not networking</string>
+    <string name="UMUpdateTitle">Discover new version</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMUpdateContent">Update content</string>
+    <string name="UMUpdateSize">Only need to download:</string>
+    <string name="UMTargetSize">New version size:</string>
+    <string name="UMGprsCondition">（hints：Non WIFI environment）</string>
+    <string name="UMUpdateNow">Update immediately</string>
+    <string name="UMAppUpdate">Application update</string>
+    <string name="UMNotNow">Later</string>
+    <string name="UMIgnore">Ignore</string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMDialog_InstallAPK">The latest version has been downloaded，is installed？</string>
+    <string name="UMUpdateCheck">2.5.0.20141210</string>
+
+    <string name="pull_to_refresh_pull_label">pull to refresh</string>
+    <string name="pull_to_refresh_release_label">Release can be refreshed</string>
+    <string name="pull_to_refresh_refreshing_label">loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label">refresh</string>
+    <string name="umeng_socialize_network_break_alert">Please connect to the network and try again!</string>
+    <string name="umeng_socialize_comment">comment</string>
+    <string name="umeng_socialize_comment_detail">comment detail</string>
+    <string name="umeng_socialize_back">back</string>
+    <string name="umeng_socialize_near_At">recently\@ friends</string>
+    <string name="umeng_socialize_friends">Friends of concern</string>
+    <string name="umeng_socialize_send">send</string>
+    <string name="umeng_socialize_tip_blacklist">Banned.</string>
+    <string name="umeng_socialize_tip_loginfailed">login failed&#8230;</string>
+    <string name="umeng_socialize_msg_sec">seconds ago</string>
+    <string name="umeng_socialize_msg_min">minutes age</string>
+    <string name="umeng_socialize_msg_hor">hours age</string>
+    <string name="umeng_socialize_ucenter_login_title_guide">guest login</string>
+    <string name="umeng_socialize_ucenter_login_title_platform">login</string>
+
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+
+    <string name="umeng_socialize_share_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能，我们简化了社交平台的接入，为开发者提供坚实的基础服务。（一）支持各大主流社交平台，
+												（二）支持图片、文字、gif动图、音频、视频；@好友，关注官方微博等功能。
+												（三）提供详尽的后台用户社交行为分析。www.umeng.com/social</string>
+    <string name="umeng_socialize_login_qq">QQ Zone</string>
+    <string name="umeng_socialize_login">login</string>
+    <string name="umeng_socialize_text_choose_account">Select the existing account login</string>
+    <string name="umeng_socialize_text_authorize">authorize</string>
+    <string name="umeng_socialize_text_unauthorize">unauthorize</string>
+    <string name="umeng_socialize_text_ucenter">ucenter</string>
+    <string name="umeng_socialize_text_login_fail">retry!</string>
+    <string name="umeng_socialize_text_comment_hint">Say something&#8230;</string>
+    <string name="umeng_socialize_text_friend_list">Buddy list</string>
+    <string name="umeng_socialize_text_visitor">Gust</string>
+    <string name="umeng_socialize_text_tencent_no_connection">无法连接到腾讯微博客户端</string>
+    <string name="umeng_socialize_text_tencent_oauth_login_fail">授权登录失败</string>
+    <string name="umeng_socialize_text_tencent_version_no_match">版本不匹配，SSO只对微博客户端V3.8.1及以上的版本提供支持</string>
+    <string name="umeng_socialize_text_tencent_no_install">未安装腾讯微博客户端</string>
+    <string name="umeng_socialize_text_waitting">请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin_circle">跳转朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin">跳转易信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin_circle">跳转易信朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qzone">跳转QZone中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_redirect">跳转</string>
+    <string name="umeng_socialize_text_waitting_message">,请稍候...</string>
+    <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
+    <!-- 平台名称 -->
+    <string name="umeng_socialize_text_tencent_key">Tencent weibo</string>
+    <string name="umeng_socialize_text_sina_key">Weibo</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ Zone</string>
+    <string name="umeng_socialize_text_renren_key">Renren</string>
+    <string name="umeng_socialize_text_douban_key">Douban</string>
+    <string name="umeng_socialize_text_weixin_key">Wechat</string>
+    <string name="umeng_socialize_text_weixin_circle_key">WeChat Circles</string>
+    <string name="umeng_socialize_text_add_custom_platform">Please configure the user platform</string>
+    <string name="umeng_example_home_btn_plus">Social sharing</string>
+    <string name="umeng_socialize_text_waitting_share">share&#8230;</string>
+    <string name="umeng_socialize_content_hint">Say something&#8230;</string>
+    <string name="umeng_socialize_cancel_btn_str">Cancel</string>
+    <string name="umeng_socialize_send_btn_str">Send</string>
+    <string name="umeng_socialize_img_des"></string>
+    <string name="umeng_socialize_share">Share</string>
+    <string name="com_facebook_loading">Loading...</string>
+
+    <string name="umeng_common_action_info_exist">Downloading.</string>
+    <string name="umeng_common_info_interrupt">Download error, please check the network to continue.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_start_download_notification">Downloading</string>
+    <string name="umeng_common_start_patch_notification">Updating installation package</string>
+    <string name="umeng_common_network_break_alert">Please check the network to continue!</string>
+    <string name="umeng_common_download_failed">Download failed</string>
+    <string name="umeng_common_download_finish">Download completed, please click Install</string>
+    <string name="umeng_common_patch_finish">Update completed, please click Install</string>
+    <string name="umeng_common_silent_download_finish">The new version is ready. Please click Install.</string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_socialize_text_laiwang_key">来往</string>
+    <string name="umeng_socialize_text_laiwang_dynamic_key">来往动态</string>
+    <string name="umeng_socialize_laiwang_default_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能</string>
 </resources>
